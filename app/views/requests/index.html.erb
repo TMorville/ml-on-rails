@@ -1,0 +1,15 @@
+<section id="search">
+  <div class="container">
+    <%= form_tag("/requests/show", method: "get", remote: true) do %>
+      <%= text_field_tag(:f1, "2") %>
+      <%= text_field_tag(:f2, "4") %>
+      <%= text_field_tag(:f3, "8") %>
+      <%= submit_tag("Send request") %>
+    <% end %>
+  </div>
+</section>
+
+<section id="target-for-change">
+  <div class="container">
+  </div>
+</section>
